@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Palette from './Palette';
-import seedsColors from './seedColors';
+import seedColors from './seedColors';
+import { generatePalette } from './colorHelper';
 
 class App extends Component {
   render () {
     return (
       <div className="App">
-        <Palette {...seedsColors[4]} />
+        <Palette palette={generatePalette(seedColors[4])} />
       </div>
     );
   }
