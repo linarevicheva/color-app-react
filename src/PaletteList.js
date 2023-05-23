@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import MiniPalette from "./MiniPalette";
-import { Link } from 'react-router-dom';
 import { withStyles } from '@mui/styles';
 
 const styles = {
@@ -36,7 +35,6 @@ const styles = {
 class PaletteList extends Component {
     constructor (props) {
         super(props);
-        this.state = {};
         this.gotoPalette = this.gotoPalette.bind(this);
     }
 
